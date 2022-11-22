@@ -1,0 +1,256 @@
+import React from "react";
+import {
+    View,
+    Text,
+    StyleSheet,
+    Image,
+    Dimensions,
+    ScrollView,
+} from "react-native";
+import RadioGroup from 'react-native-radio-button-group';
+
+const HEIGHT = Dimensions.get('window').height;
+const WIDTH = Dimensions.get('window').width;
+
+
+const HomeScreen = () => {
+    return (
+        <ScrollView style={{ flex: 1, backgroundColor: '#fff' }}>
+
+            <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 50, }}>
+                <View style={{ flex: 1, height: 1, backgroundColor: 'black' }} />
+                <View>
+                </View>
+            </View>
+            <View style={styles.container}>
+                <Text style={styles.text}>Products</Text>
+            </View>
+            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                <View style={{ flex: 1, height: 1, backgroundColor: 'black' }} />
+                <View>
+                </View>
+            </View>
+            <View style={styles.view}>
+                <View style={styles.viewImage}>
+                    <Image style={styles.image}
+                        source={require('../Image/logo.png')} />
+                </View>
+                <View style={styles.textContainer}>
+                    <View style={{ flexDirection: 'row' }}>
+                        <Text style={styles.product}>Product Name :</Text>
+                        <Text style={styles.name}>COMTEST</Text>
+                    </View>
+                    <View style={{ flexDirection: 'row' }}>
+                        <Text style={styles.product}>Price :</Text>
+                        <Text style={styles.name}>$1,233.81</Text>
+                    </View>
+                    <View style={{ flexDirection: 'row' }}>
+                        <Text style={styles.product}>Brand :</Text>
+                        <Text style={styles.name}>Schroeder Valenzuela , {'\n'} Gamble Hendrix</Text>
+                    </View>
+                </View>
+            </View>
+            <View style={styles.textColor}>
+                <Text style={styles.txt}>Colors</Text>
+            </View>
+            <View style={styles.radioButton}>
+
+                <RadioGroup
+                    horizontal
+                    options={[
+                        { id: 1, label: 'Red' },
+                        { id: 2, label: 'Blue' },
+                        { id: 3, label: 'Green' },
+                    ]}
+                    activeButtonId={0}
+                    circleStyle={{ fillColor: 'pink', borderColor: 'cyan' }}
+                />
+            </View>
+            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                <View style={{ flex: 1, height: 1, backgroundColor: 'black' }} />
+                <View>
+                </View>
+            </View>
+            <View style={styles.view}>
+                <View style={styles.viewImage}>
+                    <Image style={styles.image}
+                        source={require('../Image/up-arrow.png')} />
+                </View>
+                <View style={styles.textContainer}>
+                    <View style={{ flexDirection: 'row' }}>
+                        <Text style={styles.product}>Product Name :</Text>
+                        <Text style={styles.name}>COMTEST</Text>
+                    </View>
+                    <View style={{ flexDirection: 'row' }}>
+                        <Text style={styles.product}>Price :</Text>
+                        <Text style={styles.name}>$1,233.81</Text>
+                    </View>
+                    <View style={{ flexDirection: 'row' }}>
+                        <Text style={styles.product}>Brand :</Text>
+                        <Text style={styles.name}>Schroeder Valenzuela , {'\n'} Gamble Hendrix</Text>
+                    </View>
+                </View>
+            </View>
+            <View style={styles.textColor}>
+                <Text style={styles.txt}>Colors</Text>
+            </View>
+            <View style={styles.radioButton}>
+
+                <RadioGroup
+                    horizontal
+                    options={[
+                        { id: 1, label: 'Red' },
+                        { id: 2, label: 'Blue' },
+                        { id: 3, label: 'Green' },
+                    ]}
+                    activeButtonId={0}
+                    circleStyle={{ fillColor: 'pink', borderColor: 'cyan' }}
+                />
+            </View>
+            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                <View style={{ flex: 1, height: 1, backgroundColor: 'black' }} />
+                <View>
+                </View>
+            </View>
+            <View style={styles.view}>
+                <View style={styles.viewImage}>
+                    <Image style={styles.image}
+                        source={require('../Image/private_welcome.png')} />
+                </View>
+                <View style={styles.textContainer}>
+                    <View style={{ flexDirection: 'row' }}>
+                        <Text style={styles.product}>Product Name :</Text>
+                        <Text style={styles.name}>COMTEST</Text>
+                    </View>
+                    <View style={{ flexDirection: 'row' }}>
+                        <Text style={styles.product}>Price :</Text>
+                        <Text style={styles.name}>$1,233.81</Text>
+                    </View>
+                    <View style={{ flexDirection: 'row' }}>
+                        <Text style={styles.product}>Brand :</Text>
+                        <Text style={styles.name}>Schroeder Valenzuela , {'\n'} Gamble Hendrix</Text>
+                    </View>
+                </View>
+            </View>
+            <View style={styles.textColor}>
+                <Text style={styles.txt}>Colors</Text>
+            </View>
+            <View style={styles.radioButton}>
+
+                <RadioGroup
+                    horizontal
+                    options={[
+                        { id: 1, label: 'Red' },
+                        { id: 2, label: 'Blue' },
+                        { id: 3, label: 'Green' },
+                    ]}
+                    activeButtonId={0}
+                    circleStyle={{ fillColor: 'pink', borderColor: 'cyan' }}
+                />
+            </View>
+            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                <View style={{ flex: 1, height: 1, backgroundColor: 'black' }} />
+                <View>
+                </View>
+            </View>
+
+            <View style={styles.view}>
+                <View style={styles.viewImage}>
+                    <Image style={styles.image}
+                        source={require('../Image/private_welcome.png')} />
+                </View>
+                <View style={styles.textContainer}>
+                    <View style={{ flexDirection: 'row' }}>
+                        <Text style={styles.product}>Product Name :</Text>
+                        <Text style={styles.name}>COMTEST</Text>
+                    </View>
+                    <View style={{ flexDirection: 'row' }}>
+                        <Text style={styles.product}>Price :</Text>
+                        <Text style={styles.name}>$1,233.81</Text>
+                    </View>
+                    <View style={{ flexDirection: 'row' }}>
+                        <Text style={styles.product}>Brand :</Text>
+                        <Text style={styles.name}>Schroeder Valenzuela , {'\n'} Gamble Hendrix</Text>
+                    </View>
+                </View>
+            </View>
+            <View style={styles.textColor}>
+                <Text style={styles.txt}>Colors</Text>
+            </View>
+            <View style={styles.radioButton}>
+
+                <RadioGroup
+                    horizontal
+                    options={[
+                        { id: 1, label: 'Red' },
+                        { id: 2, label: 'Blue' },
+                        { id: 3, label: 'Green' },
+                    ]}
+                    activeButtonId={0}
+                    circleStyle={{ fillColor: 'pink', borderColor: 'cyan' }}
+                />
+            </View>
+            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                <View style={{ flex: 1, height: 1, backgroundColor: 'black' }} />
+                <View>
+                </View>
+            </View>
+        </ScrollView>
+    )
+}
+
+const styles = StyleSheet.create({
+    text: {
+        fontSize: 20,
+        fontWeight: 'bold',
+    },
+    container: {
+        alignSelf: 'center',
+        justifyContent: 'center',
+        padding: 10,
+    },
+    view: {
+        flexDirection: 'row',
+        padding: 20
+    },
+    viewImage: {
+        height: HEIGHT / 8,
+        width: WIDTH / 3.5,
+        backgroundColor: '#a9a9a9',
+        borderRadius: 50,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    image: {
+        height: HEIGHT / 8.5,
+        width: WIDTH / 4
+    },
+    textContainer: {
+        flexDirection: 'column',
+        padding: 20
+    },
+    product: {
+        fontSize: 15,
+        fontWeight: 'bold',
+    },
+    name: {
+        fontSize: 15,
+        color: '#000'
+    },
+    textColor: {
+        marginStart: 20,
+        marginTop: -10
+    },
+    txt: {
+        fontSize: 15,
+        color: '#000',
+        fontWeight: 'bold',
+    },
+    radioButton: {
+        height: HEIGHT / 15,
+        marginStart: 10,
+        padding: 10,
+    }
+})
+
+export default HomeScreen;
